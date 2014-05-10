@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="search-content">
+		<div class="nav">
+	    	<a href="/">
+	    		<div class="title-logo"></div>
+	    	</a>
+		</div>
+		<h2 class="app-description">
+			reverse font search engine
+		</h2>
+		<h2 class="results-heading"><span class="label label-danger">{{number}}</span> results found for "<strong>{{query}}</strong>"</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					{% for result in results %}
+					<div class="panel panel-default result-panel">
+						<div class="panel-body">
+							<a href="{{result.url}}" class="result-link">{{result.url}}</a>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+		    <div class="credits">
+		    	made with <span class="hearts"></span> by sanket and rohit
+		    </div>
+	</div>
+{% endblock %}

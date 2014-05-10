@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="search-content">
+		<div class="nav">
+	    	<div class="title-logo"></div>
+		</div>
+		<h2 class="app-description">
+			reverse font search engine
+		</h2>
+
+
+		    <form action="/search" method="GET">
+		        <input name="q" type="text" class="search-input" placeholder="search a font" />
+		        <button id="search-btn" class="search"></button>
+		    </form>
+		    <br/>
+		    <span class="example-txt">example: <a href="/search?q=aller">aller</a>,&nbsp;<a href="/search?q=proxima nova">proxima nova</a>, &nbsp;<a href="/search?q=helvetica">helvetica</a> </span>
+
+		    <div class="credits">
+		    	made with <span class="hearts"></span> by sanket and rohit
+		    </div>
+	</div>
+{% endblock %}

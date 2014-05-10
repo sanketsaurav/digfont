@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>DigFont - Reverse Font Search Engine</title>
+  <meta name="description" content="DigFont - Reverse Font Search Engine. Made with love by Sanket and Rohit.">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Add fonts -->
+  <!-- <link rel="shortcut icon" href=""> -->
+  <!-- Add flatui -->
+  <!-- Add CSS -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/boilerplate_main.css">
+  <link rel="stylesheet" href="/static/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="/static/css/page.css">
+</head>
+<body class="search-head">
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+  
+  {% block content %}
+  {% endblock %}
+  
+  {% block footer %}
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src='//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+  {% endblock %}
+</body>
+</html>

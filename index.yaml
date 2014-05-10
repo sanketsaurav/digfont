@@ -1,0 +1,6 @@
+indexes:
+
+- kind: Font
+  properties:
+  - name: name
+  - name: site_url
